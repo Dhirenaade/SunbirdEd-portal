@@ -1,3 +1,4 @@
+import { CoreModule } from '@sunbird/core';
 import { SharedModule } from '@sunbird/shared';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -29,14 +30,7 @@ import { CommonConsumptionModule} from '@project-sunbird/common-consumption';
     ReactiveFormsModule,
     SharedModule,
     CoreModule,
-    NgInviewModule,
-    TelemetryModule,
-    CbseProgramModule,
-    DynamicModule.withComponents([CollectionComponent, DashboardComponent])
-  ],
-  exports: [
-    ProgramComponent,
-    OnboardPopupComponent
+    ProgramRoutingModule
   ]
 })
 export class ProgramModule { }
